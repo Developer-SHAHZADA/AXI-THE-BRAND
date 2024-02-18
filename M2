@@ -1,1 +1,5 @@
-
+def randBuildvsskj():
+    model3 = random.choice(['SM-S911B','SM-S908B','SM-G998B','SM-G988B','SM-G973B','SM-N986B'])
+    END = '[FBAN/FB4A;FBAV/228.0.0.25.13;FBBV/779524978;FBDM/{density=3.0,width=1080,height=1920};FBLC/en_US;FBRV/117249215;FBCR/IIJmio;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.orca;FBDV/A516V;FBSV/100.0;FBOP/11;FBCA/armeabi-v7a:armeabi;;]'
+    ua = f'Dalvik/2.1.0 (Linux; U; Android {random.randint(4,13)}; {random.choice(model3)} Build/QP1A.{random.randint(111111,999999)}.{random.randint(111,999)}) '+END
+    return ua
